@@ -9,6 +9,9 @@
   <meta property="og:title" content="Club Deportivo Árabe Unido | Vive el fútbol de Colón">
   <meta property="og:description" content="Compra boletas, predice resultados y gana puntos canjeables en entradas y merch oficial.">
   <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+  <meta property="og:image" content="https://yeniferyasalejo-dev.github.io/panama-futbol/assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800&display=swap" rel="stylesheet">
@@ -29,10 +32,10 @@
       --ink-12:    rgba(13, 13, 13, 0.12);
       --ink-10:    rgba(13, 13, 13, 0.10);
       --ink-06:    rgba(13, 13, 13, 0.06);
-      --green:     #16a34a;
-      --green-1:   #4ade80;
-      --green-2:   #15803d;
-      --green-lt:  #dcfce7;
+      --blue:     #1d4ed8;
+      --blue-1:   #3b82f6;
+      --blue-2:   #1e3a8a;
+      --blue-lt:  #dbeafe;
       --dark:      #1a1919;
       --amber:     #d97706;
       --red:       #dc2626;
@@ -67,7 +70,7 @@
        TOP BAR
        ============================================ */
     .topbar { background: var(--dark); color: rgba(255,255,255,0.6); text-align: center; padding: 11px 16px; font-size: 13px; font-weight: 500; }
-    .topbar b { color: var(--green-1); font-weight: 700; }
+    .topbar b { color: var(--blue-1); font-weight: 700; }
 
     /* ============================================
        NAV
@@ -75,7 +78,7 @@
     .nav { position: sticky; top: 0; z-index: 100; background: rgba(245,245,244,0.82); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid var(--ink-10); }
     .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 68px; }
     .logo { display: flex; align-items: center; gap: 11px; }
-    .logo-mark { width: 38px; height: 38px; border-radius: 11px; background: linear-gradient(145deg, var(--green-1), var(--green-2)); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 800; font-size: 14px; letter-spacing: -0.02em; box-shadow: 0 4px 14px rgba(22,163,74,0.3); }
+    .logo-mark { width: 38px; height: 38px; border-radius: 11px; background: linear-gradient(145deg, var(--blue-1), var(--blue-2)); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 800; font-size: 14px; letter-spacing: -0.02em; box-shadow: 0 4px 14px rgba(37,99,235,0.3); }
     .logo-name { font-size: 16px; font-weight: 800; letter-spacing: -0.03em; }
     .nav-links { display: flex; align-items: center; gap: 4px; }
     .nav-links a { font-size: 14px; font-weight: 600; color: var(--ink-60); padding: 8px 14px; border-radius: 10px; transition: all 0.2s var(--ease); }
@@ -98,20 +101,20 @@
     .hero { position: relative; overflow: hidden; padding: 120px 0 100px; text-align: center; }
     .blobs { position: absolute; inset: 0; pointer-events: none; z-index: 0; }
     .blob { position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.85; }
-    .blob-1 { width: 460px; height: 460px; background: rgba(34,197,94,0.30); top: -140px; right: -80px; animation: float1 11s ease-in-out infinite; }
-    .blob-2 { width: 360px; height: 360px; background: rgba(21,128,61,0.24); bottom: -120px; left: -100px; animation: float2 14s ease-in-out infinite; }
-    .blob-3 { width: 240px; height: 240px; background: rgba(74,222,128,0.22); top: 36%; left: 30%; animation: float3 9s ease-in-out infinite; }
+    .blob-1 { width: 460px; height: 460px; background: rgba(37,99,235,0.30); top: -140px; right: -80px; animation: float1 11s ease-in-out infinite; }
+    .blob-2 { width: 360px; height: 360px; background: rgba(30,58,138,0.24); bottom: -120px; left: -100px; animation: float2 14s ease-in-out infinite; }
+    .blob-3 { width: 240px; height: 240px; background: rgba(59,130,246,0.22); top: 36%; left: 30%; animation: float3 9s ease-in-out infinite; }
     @keyframes float1 { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(-40px,50px) scale(1.14); } }
     @keyframes float2 { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(46px,-34px) scale(1.2); } }
     @keyframes float3 { 0%,100% { transform: translate(0,0) scale(1); } 33% { transform: translate(24px,-22px) scale(0.85); } 66% { transform: translate(-18px,16px) scale(1.08); } }
 
     .hero-inner { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; gap: 28px; }
     .pill { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.7); border: 1px solid var(--ink-10); border-radius: 100px; padding: 7px 16px; font-size: 13px; font-weight: 700; color: var(--ink-60); letter-spacing: 0.01em; box-shadow: 0 2px 10px rgba(13,13,13,0.04); }
-    .pulse { width: 7px; height: 7px; background: var(--green); border-radius: 50%; animation: pulse 1.6s ease-in-out infinite; }
-    @keyframes pulse { 0%,100% { opacity: 1; box-shadow: 0 0 0 0 rgba(22,163,74,0.5); } 50% { opacity: 0.6; box-shadow: 0 0 0 6px rgba(22,163,74,0); } }
+    .pulse { width: 7px; height: 7px; background: var(--blue); border-radius: 50%; animation: pulse 1.6s ease-in-out infinite; }
+    @keyframes pulse { 0%,100% { opacity: 1; box-shadow: 0 0 0 0 rgba(37,99,235,0.5); } 50% { opacity: 0.6; box-shadow: 0 0 0 6px rgba(37,99,235,0); } }
 
     .hero h1 { font-size: clamp(52px, 11vw, 104px); font-weight: 800; letter-spacing: -0.05em; line-height: 0.92; max-width: 920px; }
-    .hero h1 em { font-style: italic; background: linear-gradient(120deg, var(--green-1), var(--green-2)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero h1 em { font-style: italic; background: linear-gradient(120deg, var(--blue-1), var(--blue-2)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
     .hero-sub { font-size: clamp(16px, 2.6vw, 20px); color: var(--ink-60); font-weight: 500; max-width: 540px; line-height: 1.5; }
     .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
     .btn-primary { background: var(--ink); color: #fff; border: none; border-radius: 16px; padding: 16px 28px; font-size: 16px; font-weight: 700; letter-spacing: -0.01em; transition: transform 0.2s var(--ease), opacity 0.2s; }
@@ -135,14 +138,14 @@
     @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
     .mq-item { display: inline-flex; align-items: center; gap: 10px; margin-right: 36px; font-size: 15px; font-weight: 700; color: rgba(255,255,255,0.4); letter-spacing: -0.01em; }
     .mq-item b { color: rgba(255,255,255,0.92); }
-    .mq-item .dot { color: var(--green-1); }
+    .mq-item .dot { color: var(--blue-1); }
 
     /* ============================================
        SECTION SHELL
        ============================================ */
     section.block { padding: 100px 0; }
-    .eyebrow { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--green); margin-bottom: 14px; }
-    .eyebrow.light { color: var(--green-1); }
+    .eyebrow { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--blue); margin-bottom: 14px; }
+    .eyebrow.light { color: var(--blue-1); }
     .block h2 { font-size: clamp(34px, 7vw, 64px); font-weight: 800; letter-spacing: -0.045em; line-height: 1.02; margin-bottom: 16px; }
     .block .lead { font-size: clamp(16px, 2.4vw, 19px); color: var(--ink-60); font-weight: 500; max-width: 480px; line-height: 1.5; margin-bottom: 48px; }
     .block.dark { background: var(--dark); color: #fff; }
@@ -166,8 +169,8 @@
     .mvs { padding: 0 16px; }
     .mvs span { font-size: 11px; font-weight: 800; color: var(--ink-30); background: var(--ink-06); padding: 5px 11px; border-radius: 8px; letter-spacing: 0.05em; }
     .match-actions { display: flex; gap: 10px; }
-    .btn-green { flex: 1; background: var(--green); color: #fff; border: none; border-radius: 12px; padding: 13px; font-size: 14px; font-weight: 700; transition: opacity 0.2s, transform 0.2s var(--ease); }
-    .btn-green:hover { opacity: 0.9; transform: translateY(-1px); }
+    .btn-blue { flex: 1; background: var(--blue); color: #fff; border: none; border-radius: 12px; padding: 13px; font-size: 14px; font-weight: 700; transition: opacity 0.2s, transform 0.2s var(--ease); }
+    .btn-blue:hover { opacity: 0.9; transform: translateY(-1px); }
     .btn-soft { background: var(--ink-06); color: var(--ink-60); border: none; border-radius: 12px; padding: 13px 18px; font-size: 14px; font-weight: 700; transition: background 0.2s; }
     .btn-soft:hover { background: var(--ink-10); }
 
@@ -181,19 +184,19 @@
     .zones { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 28px; }
     .zone { border: 1.5px solid var(--ink-10); border-radius: var(--radius-md); padding: 18px; cursor: pointer; transition: all 0.25s var(--ease); background: var(--bg-soft); }
     .zone:hover { border-color: var(--ink-30); }
-    .zone.active { border-color: var(--green); background: var(--green-lt); }
+    .zone.active { border-color: var(--blue); background: var(--blue-lt); }
     .zone.sold { opacity: 0.45; pointer-events: none; }
     .zone-name { font-size: 15px; font-weight: 800; letter-spacing: -0.01em; }
     .zone-price { font-size: 28px; font-weight: 800; letter-spacing: -0.04em; margin: 6px 0 8px; }
     .zone-tag { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
-    .tag-ok { color: var(--green); }
+    .tag-ok { color: var(--blue); }
     .tag-few { color: var(--amber); }
     .tag-no { color: var(--red); }
     .ticket-row { display: flex; align-items: center; justify-content: space-between; padding: 20px 0; border-top: 1px solid var(--ink-10); }
     .ticket-row .label { font-size: 15px; font-weight: 600; color: var(--ink-60); }
     .qty { display: flex; align-items: center; gap: 16px; }
     .qty button { width: 36px; height: 36px; border-radius: 10px; border: 1.5px solid var(--ink-12); background: var(--bg); font-size: 20px; font-weight: 700; color: var(--ink); display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
-    .qty button:hover { border-color: var(--green); color: var(--green); }
+    .qty button:hover { border-color: var(--blue); color: var(--blue); }
     .qty .num { font-size: 19px; font-weight: 800; min-width: 24px; text-align: center; }
     .ticket-total { display: flex; align-items: baseline; justify-content: space-between; padding: 22px 0; border-top: 1px solid var(--ink-10); margin-bottom: 24px; }
     .ticket-total .label { font-size: 15px; font-weight: 600; color: var(--ink-60); }
@@ -207,21 +210,21 @@
     .polla { max-width: 680px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: var(--radius-xl); padding: 40px; }
     .polla-head { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-bottom: 32px; }
     .polla-head h3 { font-size: 21px; font-weight: 800; letter-spacing: -0.03em; color: #fff; }
-    .polla-points { display: inline-flex; align-items: center; gap: 6px; background: rgba(74,222,128,0.14); border: 1px solid rgba(74,222,128,0.3); border-radius: 10px; padding: 6px 13px; font-size: 13px; font-weight: 700; color: var(--green-1); }
+    .polla-points { display: inline-flex; align-items: center; gap: 6px; background: rgba(59,130,246,0.14); border: 1px solid rgba(59,130,246,0.3); border-radius: 10px; padding: 6px 13px; font-size: 13px; font-weight: 700; color: var(--blue-1); }
     .question { margin-bottom: 28px; }
-    .q-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.09em; color: var(--green-1); margin-bottom: 8px; }
+    .q-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.09em; color: var(--blue-1); margin-bottom: 8px; }
     .q-text { font-size: 17px; font-weight: 700; color: #fff; letter-spacing: -0.01em; margin-bottom: 14px; }
     .q-options { display: flex; flex-wrap: wrap; gap: 8px; }
     .q-opt { padding: 11px 20px; border: 1.5px solid rgba(255,255,255,0.14); border-radius: 12px; background: rgba(255,255,255,0.05); color: rgba(255,255,255,0.55); font-size: 14px; font-weight: 600; transition: all 0.2s var(--ease); }
     .q-opt:hover { border-color: rgba(255,255,255,0.4); color: #fff; }
-    .q-opt.active { background: rgba(74,222,128,0.16); border-color: rgba(74,222,128,0.5); color: var(--green-1); }
+    .q-opt.active { background: rgba(59,130,246,0.16); border-color: rgba(59,130,246,0.5); color: var(--blue-1); }
     .score-pick { display: flex; align-items: center; gap: 14px; }
     .score-team { font-size: 13px; color: rgba(255,255,255,0.4); flex: 1; }
     .score-team.right { text-align: right; }
     .score-in { width: 64px; height: 64px; text-align: center; font-size: 30px; font-weight: 800; background: rgba(255,255,255,0.07); border: 1.5px solid rgba(255,255,255,0.16); border-radius: var(--radius-md); color: #fff; font-family: var(--font); letter-spacing: -0.03em; }
-    .score-in:focus { outline: none; border-color: var(--green-1); }
+    .score-in:focus { outline: none; border-color: var(--blue-1); }
     .score-dash { font-size: 28px; color: rgba(255,255,255,0.25); font-weight: 700; }
-    .btn-submit { width: 100%; background: var(--green); color: #fff; border: none; border-radius: 16px; padding: 18px; font-size: 16px; font-weight: 700; margin-top: 12px; transition: opacity 0.2s, transform 0.2s var(--ease); }
+    .btn-submit { width: 100%; background: var(--blue); color: #fff; border: none; border-radius: 16px; padding: 18px; font-size: 16px; font-weight: 700; margin-top: 12px; transition: opacity 0.2s, transform 0.2s var(--ease); }
     .btn-submit:hover { opacity: 0.9; transform: translateY(-2px); }
 
     /* ============================================
@@ -230,29 +233,29 @@
     .points-layout { display: grid; grid-template-columns: 1fr 1.1fr; gap: 28px; align-items: start; }
     @media (max-width: 860px) { .points-layout { grid-template-columns: 1fr; } }
     .points-card { background: var(--bg-soft); border: 1px solid var(--ink-10); border-radius: var(--radius-xl); padding: 44px 32px; text-align: center; box-shadow: 0 20px 60px rgba(13,13,13,0.05); }
-    .points-num { font-size: clamp(64px, 14vw, 92px); font-weight: 800; letter-spacing: -0.07em; line-height: 1; background: linear-gradient(120deg, var(--green-1), var(--green-2)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+    .points-num { font-size: clamp(64px, 14vw, 92px); font-weight: 800; letter-spacing: -0.07em; line-height: 1; background: linear-gradient(120deg, var(--blue-1), var(--blue-2)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
     .points-label { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.09em; color: var(--ink-40); margin: 8px 0 28px; }
     .progress { height: 8px; background: var(--ink-06); border-radius: 100px; overflow: hidden; margin-bottom: 10px; }
-    .progress-fill { height: 100%; background: linear-gradient(90deg, var(--green-1), var(--green)); border-radius: 100px; transition: width 0.8s var(--ease); }
+    .progress-fill { height: 100%; background: linear-gradient(90deg, var(--blue-1), var(--blue)); border-radius: 100px; transition: width 0.8s var(--ease); }
     .progress-row { display: flex; justify-content: space-between; font-size: 12px; font-weight: 600; color: var(--ink-40); }
     .rewards { display: flex; flex-direction: column; gap: 12px; }
     .reward { display: flex; align-items: center; gap: 16px; background: var(--bg-soft); border: 1px solid var(--ink-10); border-radius: var(--radius-lg); padding: 18px 20px; transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease); }
     .reward:hover { transform: translateX(4px); box-shadow: 0 10px 30px rgba(13,13,13,0.06); }
-    .reward-icon { width: 48px; height: 48px; border-radius: 14px; background: var(--green-lt); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-    .reward-icon svg { width: 24px; height: 24px; stroke: var(--green); }
+    .reward-icon { width: 48px; height: 48px; border-radius: 14px; background: var(--blue-lt); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .reward-icon svg { width: 24px; height: 24px; stroke: var(--blue); }
     .reward-info { flex: 1; }
     .reward-name { font-size: 16px; font-weight: 700; letter-spacing: -0.01em; }
     .reward-cost { font-size: 13px; color: var(--ink-40); margin-top: 2px; }
     .reward-btn { padding: 10px 18px; border-radius: 11px; font-size: 13px; font-weight: 700; border: 1.5px solid var(--ink-12); background: var(--bg); color: var(--ink-40); transition: all 0.2s; flex-shrink: 0; }
-    .reward-btn.can { border-color: var(--green); background: var(--green-lt); color: var(--green); }
-    .reward-btn.can:hover { background: var(--green); color: #fff; }
+    .reward-btn.can { border-color: var(--blue); background: var(--blue-lt); color: var(--blue); }
+    .reward-btn.can:hover { background: var(--blue); color: #fff; }
 
     .history { margin-top: 56px; }
     .history h3 { font-size: 18px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 8px; }
     .hist-row { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; border-bottom: 1px solid var(--ink-10); }
     .hist-name { font-size: 15px; font-weight: 700; }
     .hist-sub { font-size: 13px; color: var(--ink-40); margin-top: 3px; }
-    .hist-pts { font-size: 16px; font-weight: 800; color: var(--green); }
+    .hist-pts { font-size: 16px; font-weight: 800; color: var(--blue); }
 
     /* ============================================
        FOOTER
@@ -274,7 +277,8 @@
     /* TOAST */
     .toast { position: fixed; bottom: 28px; left: 50%; transform: translate(-50%, 120px); background: var(--ink); color: #fff; padding: 16px 24px; border-radius: 14px; font-size: 14px; font-weight: 600; box-shadow: 0 16px 50px rgba(0,0,0,0.3); z-index: 1000; transition: transform 0.45s var(--ease); max-width: 90%; text-align: center; }
     .toast.show { transform: translate(-50%, 0); }
-  </style>
+
+    .brand-logo { width: 42px; height: 42px; object-fit: contain; display: block; background: #fff; border-radius: 10px; padding: 3px; }  </style>
 </head>
 <body>
 
@@ -285,7 +289,7 @@
   <nav class="nav">
     <div class="wrap nav-inner">
       <a href="#inicio" class="logo">
-        <div class="logo-mark">AU</div>
+        <img src="assets/logo.png" alt="Escudo Árabe Unido" class="brand-logo">
         <span class="logo-name">Árabe Unido</span>
       </a>
       <div class="nav-links" id="navLinks">
@@ -349,7 +353,7 @@
             <div class="mteam right"><div class="mteam-name">Tauro FC</div><div class="mteam-tag">Visitante</div></div>
           </div>
           <div class="match-actions">
-            <button class="btn-green" onclick="goTo('boletas')">Comprar boleta</button>
+            <button class="btn-blue" onclick="goTo('boletas')">Comprar boleta</button>
             <button class="btn-soft" onclick="goTo('polla')">Predecir</button>
           </div>
         </div>
@@ -361,7 +365,7 @@
             <div class="mteam right"><div class="mteam-name">Árabe Unido</div><div class="mteam-tag">Visitante</div></div>
           </div>
           <div class="match-actions">
-            <button class="btn-green" onclick="toast('Entradas de visitante disponibles pronto')">Ver entradas</button>
+            <button class="btn-blue" onclick="toast('Entradas de visitante disponibles pronto')">Ver entradas</button>
             <button class="btn-soft" onclick="goTo('polla')">Predecir</button>
           </div>
         </div>
@@ -373,7 +377,7 @@
             <div class="mteam right"><div class="mteam-name">San Francisco FC</div><div class="mteam-tag">Visitante</div></div>
           </div>
           <div class="match-actions">
-            <button class="btn-green" onclick="goTo('boletas')">Comprar boleta</button>
+            <button class="btn-blue" onclick="goTo('boletas')">Comprar boleta</button>
             <button class="btn-soft" onclick="goTo('polla')">Predecir</button>
           </div>
         </div>
@@ -529,7 +533,7 @@
     <div class="wrap">
       <div class="foot-top">
         <div class="foot-brand">
-          <div class="foot-logo"><div class="logo-mark">AU</div><span>Árabe Unido</span></div>
+          <div class="foot-logo"><img src="assets/logo.png" alt="Escudo Árabe Unido" class="brand-logo"><span>Árabe Unido</span></div>
           <p class="foot-desc">Club Deportivo Árabe Unido. Colón, Panamá. Fundado en 1946. Vive el fútbol como nunca antes.</p>
         </div>
         <div class="foot-cols">
